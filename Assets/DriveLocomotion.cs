@@ -21,7 +21,7 @@ public class DriveLocomotion : MonoBehaviour
     public float lookDownClamp = 20f;
 
     Vector3 moveDirection = Vector3.zero;
-    float rotateYaw, rotatePitch;
+    //float rotateYaw, rotatePitch;
 
     void Start()
     {
@@ -40,9 +40,9 @@ public class DriveLocomotion : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log("Turn: " + turn.ReadValue<Vector2>().x);
-        Debug.Log("Accelerate: " + accelerate.ReadValue<float>());
-        Debug.Log("Break Pedal: " + brakePedal.ReadValue<float>());
+        //Debug.Log("Turn: " + turn.ReadValue<Vector2>().x);
+        //Debug.Log("Accelerate: " + accelerate.ReadValue<float>());
+        //Debug.Log("Break Pedal: " + brakePedal.ReadValue<float>());
 
         Locomotion();
     }
