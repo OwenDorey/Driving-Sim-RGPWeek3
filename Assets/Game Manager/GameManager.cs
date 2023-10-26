@@ -19,5 +19,6 @@ public class GameManager : MonoBehaviour
         // Removed below line of code as shouldn't be able to instantiate a MonoBehaviour with 'new' at runtime.
         //InputManager = new InputManager();
         InputManager = this.GetOrAddComponent<InputManager>();
+
     }
 }

@@ -76,7 +76,7 @@ public class DriveLocomotion : MonoBehaviour
 
             drag = 1 - defaultDrag - (breakDrag * breaking);
 
-            speed += acceleration * accelerationMutliplier;
+            speed += acceleration * accelerationMutliplier; 
             speed *= drag;
 
             if (speed <= 0.1)
