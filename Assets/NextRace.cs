@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class NextRace : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject winScreen;
     private void OnTriggerEnter3D(Collider other)
     {
         if (other.tag =="Player")
         {
-            SceneManager.LoadScene("race2");
+            winScreen.SetActive(true);
+            Cursor.visible = true;
         }
 
     }
